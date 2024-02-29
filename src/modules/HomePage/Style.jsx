@@ -183,10 +183,22 @@ export const ServiceAbt = styled.div`
 export const TotalService = styled.div`
     font-family: 'Poppins' !important;
     margin-top: 40px;
-    .ServBox{
-       background-color: transparent;
+    .ServBox {
+        background: linear-gradient(to bottom, #f0f0f0 50%, #fff 50%);
+        background-size: 100% 200%;
+        background-position: bottom left;
+        transition: all .5s ease-out;
+        border-bottom-left-radius: 12200%;
+        border-bottom-right-radius: 2220%;
+        height: 100px;
+        margin: 20px;
     }
-    
+
+    .ServBox:hover {
+        background-position: top left;
+        color: #fff;
+    }
+
     .Topheading {
         text-align: center;
         font-family: 'Poppins' !important;
@@ -220,6 +232,14 @@ export const TotalService = styled.div`
         font-weight: 800;
         margin-top: 25px;
     }
+    .subheading2 {
+        font-size: 27px;
+        font-family: 'Poppins' !important;
+        color: #162d6d;
+        padding: 0 20px;
+        font-weight: 800;
+        margin-top: 25px;
+    }
     & p {
         font-size: 18px;
         color: #7a7878;
@@ -234,13 +254,37 @@ export const TotalService = styled.div`
         font-size: 20px;
         padding-left: 20px;
     }
+    .seeMore2 {
+        cursor: pointer;
+        color: #162d6d;
+        font-size: 20px;
+        padding-left: 20px;
+    }
     & svg {
         font-size: 20px;
         margin-top: 10px;
         color: #f96156;
         margin-left: 10px;
     }
-    .ServBox::hover {
-        background-color: red;
+
+    @media screen and (max-width: 1286px) {
+        .subheading {
+          margin-top: 0px;
+        }.subheading2 {
+          margin-top: 0px;
+        }
     }
+    @media screen and (max-width: 767px) {
+        .ServBox {
+        background: linear-gradient(to bottom, #f0f0f0 50%, #fff 50%);
+        background-size: 100% 200%;
+        background-position: bottom left;
+        transition: all .5s ease-out;
+        border-bottom-left-radius: 12200%;
+        border-bottom-right-radius: 2220%;
+        height: 200px;
+        margin: 20px;
+    }
+    }
+    
 `

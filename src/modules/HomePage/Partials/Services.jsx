@@ -9,10 +9,10 @@ const Services = () => {
         <TotalService>
             <h1 className='Topheading'>WELCOME TO FINANCIAL SERVICES</h1>
             <Row gutter={[24, 24]}>
-                <Col span={12} md={6}>
+                <Col span={12} md={10} lg={6}>
                     <img src={ServiceImg} style={{ width: '100%' }} />
                 </Col>
-                <Col span={24} md={9} className='ServBox'>
+                <Col span={24} md={10} lg={8} className='ServBox'>
                     <div className='subheading'>Intelectual Property Services</div>
                     <p>Copyright is a form of intellectual property protection like trademark and patents. </p>
                     <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -20,7 +20,14 @@ const Services = () => {
                         <div><FaLongArrowAltRight /></div>
                     </div>
                 </Col>
-                <Col span={24} md={9}></Col>
+                <Col span={24} md={10} lg={8} className='ServBox'>
+                    <div className='subheading2'>Efiling Services</div>
+                    <p> Ethan’s can help individual’s e-file their Income Tax Return with the Income Tax Department. </p>
+                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                        <div className='seeMore2'>See more</div>
+                        <div><FaLongArrowAltRight style={{color:'#162d6d'}} /></div>
+                    </div>
+                </Col>
             </Row>
         </TotalService>
     )
