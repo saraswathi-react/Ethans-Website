@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "NewYork";
+  src: local("NewYork"),
+      url("./fonts/NewYork/FontsFree-Net-NewYork.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: local("Helvetica"),
+      url("./fonts/Helvetica/Helvetica.ttf") format("truetype");
+      font-weight: 200;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #FFB800;
+}
+
+::selection {
+  color: #fff;
+  background: #FFB800;
+}
