@@ -8,13 +8,14 @@ import { FiShoppingCart } from "react-icons/fi";
 import { MdOutlineMenu } from 'react-icons/md'
 import { AiOutlineClose } from 'react-icons/ai'
 import { Button, Flex } from "antd";
+import MenuItems from "./MenuItems";
 // import NavNew from '@assets/images/NavNew.png'
 
 
 
 
 export const NavHeader = () => {
-  
+
   const navigate = useNavigate()
 
   const [isOpen, setIsOpen] = useState(true);
@@ -27,110 +28,138 @@ export const NavHeader = () => {
   const toggleSubmenu = () => {
     setShowSubmenu(!showSubmenu);
   };
-  
+
   const handleToggleSubmenu = () => {
     setIsSubmenuOpen(!isSubmenuOpen);
   };
 
 
-  const NavData = [
+  const menuItems = [
     {
-      name: 'Home',
-      path: '/',
+      title: "Home",
+      path: "/"
     },
-    // {
-    //   name: 'Collection',
-    //   path: '/collection',
-    //   img: '',
-    //   onClick: toggleSubmenu,
-    //   submenu: [
-    //     {
-    //       name: 'Customized Gift Sets',
-    //       path: '',
-    //     },
-    //     {
-    //       name: 'Wedding Return Hampers',
-    //       path: '',
-    //     },
-    //     {
-    //       name: 'Desktop Utilities',
-    //       path: '',
-    //     },
-    //   ],
-    // },
     {
-      name: 'About',
-      path: '/about',
+      title: "Company Formation",
+      submenu: [
+        {
+          title: "One Person Company",
+          path: "/about"
+        },
+        {
+          title: "Private Limited Company",
+          path: "/about"
+
+        },
+        {
+          title: "Public Limited Company",
+          path: "/about"
+
+        },
+        {
+          title: "Limited Liability Partnership",
+          path: "/about"
+
+        },
+        {
+          title: "Partnership",
+          path: "/about"
+
+        },
+        {
+          title: "Propreitorship",
+          path: "/about"
+
+        },
+        {
+          title: "Trust",
+          path: "/about"
+
+        },
+      ],
     },
+    {
+      title: "Business Services",
+      submenu: [
+        {
+          title: "Taxation",
+          submenu: [
+            {
+              title: "Income Tax",
+              path: "/frontend",
+            },
+
+          ],
+        },
+        {
+          title: "Foreign Trade and Investments",
+          submenu: [
+            {
+              title: "Foreign Branches In India",
+              path: "/frontend",
+            },
+            {
+              title: "Liaison office In India",
+              path: "/backend",
+            },
+          ],
+        },
+        {
+          title: "Others",
+          submenu: [
+            {
+              title: "Import Export Code (IEC)",
+              path: "/frontend",
+            },
+            {
+              title: "FCRA Registrations",
+              path: "/backend",
+            },
+            {
+              title: "Udayam Registrations",
+              path: "/backend",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      title: "Clientele",
+      path: "/clientele"
+    },
+    {
+      title: "Enquiry",
+      path: "/about"
+    },
+    {
+      title: "Blog",
+      path: "/about"
+    },
+
   ];
-
-
-  const phoneNumber = "15551234567";
-
- 
-
-//   const chunkArray = (arr, chunkSize) => {
-//     const chunkedArray = [];
-//     for (let i = 0; i < arr.length; i += chunkSize) {
-//       chunkedArray.push(arr.slice(i, i + chunkSize));
-//     }
-//     return chunkedArray;
-//   };
-
-  // Maximum number of submenu items per row
-  const itemsPerRow = 3;
 
 
   return (
     <div>
       <TopNavBar>
-        <LogoPlace>
-          {/* <img src={Logo} alt="Logo" /> */}<h2>kjhwe</h2>
-          <NavCollapse State={`${isOpen ? 'none' : 'flex'}`}>
-            {NavData.map(({ name, path, onClick, submenu }, i) => {
-              return (
-                <React.Fragment key={i}>
-                  <NavLink
-                    to={path}
-                    onMouseEnter={() => {
-                      if (name === 'Collection') {
-                        handleToggleSubmenu();
-                      }
-                    }}
-                    onMouseLeave={() => {
-                      if (name === 'Collection') {
-                        handleToggleSubmenu();
-                      }
-                    }}
-                    onClick={() => setIsOpen(!isOpen)}
-                  >
-                    {name}
-                    {/* {name === 'Collection' && <img src={NavNew} alt='' />} */}
-
-                  </NavLink>
-                </React.Fragment>
-              );
-            })}
-          </NavCollapse>
-        </LogoPlace>
+        {/* <LogoPlace> */}
+        {/* <img src={Logo} alt="Logo" /> */}<h2>kjhwe</h2>
+        <NavCollapse State={`${isOpen ? 'none' : 'flex'}`}>
+          <nav>
+            <ul className="menus">
+              {menuItems.map((menu, index) => {
+                const depthLevel = 0;
+                return <MenuItems items={menu} key={index} depthLevel={depthLevel} />;
+              })}
+            </ul>
+          </nav>
+        </NavCollapse>
+        {/* </LogoPlace> */}
 
 
-        <Flex gap={'20px'} >
-          <Button
-            className='whatsappbtnstylesicon'
-            // icon={<img src={whatsappLogo}
-            //  alt="Shopping Cart" style={{ marginRight: '0px', width: '28px', height: '28px' }} />}
-          />
-
-
-       
-          <Button
-            className='btnstylesicon'
-            icon={<FiShoppingCart style={{ marginRight: '0px', color: 'black' }} className="btnstylesmobleicon" />}
-
-          />
-
-        </Flex>
+        <div className="ContactDetail">
+          More Details
+        </div>
 
 
         <Iconplace
