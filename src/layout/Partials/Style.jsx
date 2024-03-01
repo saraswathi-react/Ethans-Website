@@ -39,19 +39,21 @@ export const TopNavBar = styled.nav`
   a:-webkit-any-link {
     cursor: pointer;
     text-decoration: none;
-    color: #545454;
+    color: #0e0e0e;
     font-size: 16px;
-    padding: 0 60px 5px 0;
-    /* border-bottom: 1px solid #545454 !important; */
+    padding: 10px;
+    font-weight: 500;
+    text-align: start;
+    margin: 0;
 }
 
 a:-webkit-any-link:active {
-    color: #0391df;
+    color: #162d6d;
     /* padding: 0 0 5px 0; */
     /* border-bottom: 1px solid #545454 !important; */
 }
 a:-webkit-any-link:hover {
-  color: #0391df;
+  color: #fff;
     /* border-bottom: 1px solid #545454 !important; */
 }
   &.sticky {
@@ -62,7 +64,7 @@ a:-webkit-any-link:hover {
   & button {
     font-weight: 400;
     font-size:1rem;
-    border-radius: 25px;
+    /* border-radius: 25px; */
     padding: 20px 30px;
     justify-content: center;
     display: flex;
@@ -72,20 +74,15 @@ a:-webkit-any-link:hover {
     border-color: black;
     color: black;
     top: 5px;
-    &:hover {
+    /* &:hover {
       background: linear-gradient(180deg, #5500FF 0%, #FF6565 100%);
       color: white;
-
-    }
-
+    } */
   }
 
-  .btnstylesicon{
-    
-  }
+  
 
   .btnstylesmobleicon {
-
     :hover {
       color: white !important;
     }
@@ -101,70 +98,32 @@ a:-webkit-any-link:hover {
     }
   }
 
-  .whatsappbtnstylesicon{
-    box-shadow: none !important;
-
-    :hover {
-      background-color:white;
-    }
-  
+  .ContactDetail {
+    background-color: #f96156;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
   }
-
-.whatsapplogo{
-
-}
-
-.whatsapplogobtn{
-
-}
-
-.btnstylesicon{
-    border-radius: 50%;
-}
 
   @media screen and (max-width: 376px) {
     .btnstylesmoble {
       display: none;
+    }
   }
 
-  .whatsappbtnstylesicon{
-    display: none;
+  @media screen and (max-width: 1040px) {
+    .ContactDetail { 
+      display: none;
+    }
   }
 
-  }
-
- @media screen and (max-width: 992px) {
-
+  @media screen and (max-width: 992px) {
     .whatsapplogo {
     display: none;
-}
-
+    }
  }
   
-  @media screen and (min-width:377px) and (max-width: 992px) {
-
-
-.btnstylesicon {
-    display: none;
-}
-
-.whatsappbtnstylesicon{
-  display: none;
-}
-
-  }
-  @media screen and (min-width: 992px) and (max-width: 2000px) {
-    /* .MediaScreenshow {
-      display: none;
-  } */
-
-  .btnstylesicon {
-    display: none;
-}
- 
-  }
-
- 
 `;
 
 export const NavCollapse = styled.div`
