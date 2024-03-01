@@ -288,3 +288,170 @@ export const TotalService = styled.div`
     }
     
 `
+
+// Service Sucs -----
+
+
+export const StyledService = styled.div`
+  margin: 0px 50px;
+  padding: 50px;
+  border-radius: 0px 50px 0px 50px;
+  position: relative;
+  .serviceBox {
+  border-radius: 0px 50px 0px 50px;
+    background: #162D6D;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 60px;
+  }
+  .paragraph {
+    flex: 1;
+    border-left: 1px solid #284083;
+    padding: 0px 40px;
+  }
+  .different {
+    font-size: 45px;
+    line-height: 50px;
+    color: white;
+  }
+  button {
+    text-transform: uppercase;
+    background-color: #F96156;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #F96156;
+    border-radius: 7px 7px 7px 7px;
+    padding: 10px 35px 10px 35px;
+    margin-top: 20px;
+  }
+  button:hover {
+    color: #162D6D;
+  }
+  .numbers{
+    font-size: 36px;
+    color: #F96156;
+  }
+  .title{
+    padding: 20px 0px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    font-style: normal;
+    color: #fff;
+  }
+  .content{
+    color: #FFFFFF75;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.7px;
+  }
+  .imagePosition{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+  }
+  .box1{
+    width: 150px;
+    height: 150px;
+    background: #F96156;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+  .box2{
+    width: 150px;
+    height: 150px;
+    background: #F96156;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  @media screen and (max-width: 1024px) {
+    margin: 0px 20px;
+    .paragraph:first-child {
+      flex: 1 0 100%;
+      text-align: center;
+      padding-bottom: 32px;
+    }
+    .imagePosition{
+        display: none;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 0px;
+    .paragraph {
+      flex: 1 0 100%;
+    }
+    .box1{
+    /* width: 100px;
+    height: 100px; */
+    display: none;
+  }
+  .box2{
+    display: none;
+    /* width: 100px;
+    height: 100px; */
+  }
+  }
+  @media screen and (max-width: 498px) {
+    .paragraph:first-child {
+      padding: 0;
+    }
+  }
+`;
+export const StyledSucess = styled.div`
+      margin: 0px 50px;
+  padding: 50px;
+  border-radius: 0px 50px 0px 50px;
+  .serviceBox {
+  border-radius: 0px 50px 0px 50px;
+    background: #162D6D;
+    padding: 100px 60px 50px 60px;
+  }
+  .title{
+    text-align: center;
+  }
+  .title-head{
+    /* padding: 0px 192px; */
+    font-size: 50px;
+    line-height: 60px;
+    color: white;
+  }
+  .box1{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #162D6D;
+    border: 20px solid #F96156;
+  }
+  .box2{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #162D6D;
+    border: 20px solid #F96156;
+  }
+  .carouselImgContent{
+    margin-top: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .ant-carousel .slick-dots-bottom {
+    bottom: -20px;
+}
+.ant-carousel .slick-dots li{
+    width: 35px;
+}
+.ant-carousel .slick-dots li button{
+    height: 10px;
+}
+`
+
+
