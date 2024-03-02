@@ -1,9 +1,10 @@
 import React from 'react'
+import { OnePersonCompany } from './Partials/OnePersonCompany'
 
 const CompanyFormation = () => {
   return (
-    <div>CompanyFormation</div>
-  )
+<OnePersonCompany/>
+    )
 }
 
 export default CompanyFormation
