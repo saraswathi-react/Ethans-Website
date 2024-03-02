@@ -9,9 +9,9 @@ const CarousalSuccess = () => {
       <div className="serviceBox">
         <div className="title">
           <h1 className="title-head">
-            Doing the{" "}
-            <span style={{ color: "#f96156" }}>successful thing, </span>
-            at the right time.
+            Doing the
+            <span style={{ color: "#f96156" }}> successful thing, </span>
+           <div> at the right time.</div>
           </h1>
         </div>
 
@@ -32,13 +32,7 @@ const CarousalSuccess = () => {
             <div style={{ textAlign: "center", paddingTop: "20px" }}>
               <h2 style={{ color: "#FFC200" }}>Christian Marcil</h2>
               <p style={{ color: "#B5BDD2", fontSize: "20px" }}>Grandier Co</p>
-              <p
-                style={{
-                  color: "#B5BDD2",
-                  padding: "20px 200px",
-                  fontSize: "16px",
-                }}
-              >
+              <p className="content">
                 Consulting WordPress Theme is the way to go for financial
                 institutions. We take pride in being a transparent and
                 perfection oriented organization.
