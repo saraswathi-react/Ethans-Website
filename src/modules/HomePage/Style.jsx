@@ -201,9 +201,9 @@ export const TotalService = styled.div`
     text-align: center;
     font-family: "Poppins" !important;
     margin: 80px;
+    font-size: 4vw;
     & h1 {
       text-transform: uppercase;
-      font-size: 4vw;
     }
   }
   .Topheading::before {
@@ -277,6 +277,10 @@ export const TotalService = styled.div`
     padding: 0px 20px;
   }
   @media screen and (max-width: 767px) {
+    .Topheading { 
+      margin: 10px;
+      font-size: 20px;
+    }
     /* .ServBox {
       background: linear-gradient(to bottom, #f0f0f0 50%, #fff 50%);
       background-size: 100% 200%;

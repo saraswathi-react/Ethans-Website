@@ -7,6 +7,7 @@ import CarousalSuccess from './Partials/CarousalSuccess'
 import BacktoTopPage from '@modules/BacktoTop/BacktoTopPage'
 import Counter from './Partials/Counter'
 import ContactUs from './Partials/ContactUs'
+import Footersection from '@modules/Footer/Footersection'
 
 
 
@@ -20,7 +21,7 @@ const MainIndex = () => {
       <CarousalSuccess />
       {/* <Counter/> */}
       <ContactUs/>
-      
+      <Footersection />
       <BacktoTopPage />
 
 
