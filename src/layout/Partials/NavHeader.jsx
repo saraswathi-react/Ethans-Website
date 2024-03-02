@@ -48,7 +48,7 @@ export const NavHeader = () => {
         },
         {
           title: "Private Limited Company",
-          path: "/about"
+          path: "/privatelimited"
 
         },
         {

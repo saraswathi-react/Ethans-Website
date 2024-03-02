@@ -4,7 +4,11 @@ import { NavHeader } from 'src/layout/Partials/NavHeader';
 import CompanyFormation from '@modules/CompanyFormation';
 import MainIndex from '@modules/HomePage';
 import ClientPage from '@modules/Clientele/Partils/ClientPage';
+
+import { PrivateLimitedcompany } from '@modules/CompanyFormation/Partials/PrivateLimitedcompany';
+
 import Enquiry from '@modules/Enquiry';
+
 
 
 const AppRouter = () => {
@@ -14,6 +18,7 @@ const AppRouter = () => {
                 <Route path='/' element={<NavHeader />}>
                     <Route path="/" element={<MainIndex />} />
                     <Route path="/about" element={<CompanyFormation />} />
+                    <Route path="/privatelimited" element={<PrivateLimitedcompany />} />
                     <Route path="/clientele" element={<ClientPage />} />
                     <Route path="/enquiry" element={<Enquiry />} />
 
