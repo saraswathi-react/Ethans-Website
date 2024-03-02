@@ -19,12 +19,10 @@ const MainIndex = () => {
       <ServiceDifferent />
       <Services />
       <CarousalSuccess />
-      {/* <Counter/> */}
+      <Counter/>
       <ContactUs/>
       <Footersection />
       <BacktoTopPage />
-
-
     </div>
   )
 }

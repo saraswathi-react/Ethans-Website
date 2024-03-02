@@ -8,6 +8,8 @@ import ClientPage from '@modules/Clientele/Partils/ClientPage';
 import { PrivateLimitedcompany } from '@modules/CompanyFormation/Partials/PrivateLimitedcompany';
 
 import Enquiry from '@modules/Enquiry';
+import BussinessService from '@modules/Bussiness/BussinessService/BussinessService';
+import IncomeTax from '@modules/Bussiness/Taxation/IncomeTax';
 
 
 
@@ -21,6 +23,8 @@ const AppRouter = () => {
                     <Route path="/privatelimited" element={<PrivateLimitedcompany />} />
                     <Route path="/clientele" element={<ClientPage />} />
                     <Route path="/enquiry" element={<Enquiry />} />
+                    <Route path="/bussiness" element={<BussinessService />} />
+                    <Route path="/incomeTax" element={<IncomeTax />} />
 
                     {/*  <Route path="/collection" element={<CustomizedGiftsCarousel/>}  />
         <Route path="/enquiry" element={<Profile/>}  />

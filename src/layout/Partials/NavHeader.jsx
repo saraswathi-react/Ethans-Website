@@ -82,11 +82,15 @@ export const NavHeader = () => {
       title: "Business Services",
       submenu: [
         {
+          title: "Services",
+          path: "/bussiness",
+        },
+        {
           title: "Taxation",
           submenu: [
             {
               title: "Income Tax",
-              path: "/frontend",
+              path: "/incomeTax",
             },
 
           ],
