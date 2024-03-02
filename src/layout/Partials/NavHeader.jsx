@@ -129,7 +129,7 @@ export const NavHeader = () => {
     },
     {
       title: "Enquiry",
-      path: "/about"
+      path: "/enquiry"
     },
     {
       title: "Blog",

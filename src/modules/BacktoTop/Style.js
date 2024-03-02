@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const BottomTop = styled.div`
-    right: 30px;
+    right: 62px;
     bottom: 20px;
     position: fixed;
     background-color: #f96156;
