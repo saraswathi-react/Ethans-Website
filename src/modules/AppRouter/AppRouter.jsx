@@ -4,6 +4,7 @@ import { NavHeader } from 'src/layout/Partials/NavHeader';
 import CompanyFormation from '@modules/CompanyFormation';
 import MainIndex from '@modules/HomePage';
 import ClientPage from '@modules/Clientele/Partils/ClientPage';
+import Enquiry from '@modules/Enquiry';
 
 
 const AppRouter = () => {
@@ -14,7 +15,8 @@ const AppRouter = () => {
                     <Route path="/" element={<MainIndex />} />
                     <Route path="/about" element={<CompanyFormation />} />
                     <Route path="/clientele" element={<ClientPage />} />
-                    
+                    <Route path="/enquiry" element={<Enquiry />} />
+
                     {/*  <Route path="/collection" element={<CustomizedGiftsCarousel/>}  />
         <Route path="/enquiry" element={<Profile/>}  />
         <Route path="/cart" element={<ProductViewPage />} /> */}
