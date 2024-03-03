@@ -73,7 +73,7 @@ export const NavHeader = () => {
         },
         {
           title: "Trust",
-          path: "/about"
+          path: "/trust"
 
         },
       ],
