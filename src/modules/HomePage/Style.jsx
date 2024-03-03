@@ -497,6 +497,11 @@ export const StyledSucess = styled.div`
     height: 46vh;
   }
 
+  .ant-carousel .slick-dots li.slick-active button {
+    background: #f96156;
+    opacity: 1;
+}
+
   @media screen and (max-width: 1224px) {
     .ant-carousel .slick-slider .slick-list {
       height: 43vh;
@@ -571,32 +576,37 @@ export const StylesCounter = styled.div`
 export const StyledContact = styled.div`
 font-family: 'Poppins';
   padding: 50px;
-  height: 100vh;
+  /* height: 100vh; */
   .contactBox {
     height: 100%;
-    border-radius: 0px 50px 0px 50px;
-    background: #162d6d;
   }
-
+  
   .leftTitle {
     font-size: 3vw;
     color: #fff;
     font-family: 'Poppins';
+    padding-bottom: 20px;
   }
-
+  
   .center{
+    border-radius: 0px 0px 0px 50px;
+    background: #162d6d;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Poppins';
+    padding: 50px 0px;
+    /* height: 100%; */
   }
+
   .forms{
     background: #f96156;
+    border-radius: 0px 50px 0px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    padding: 0px 50px;
+    /* height: 100%; */
+    padding: 50px 100px;
   }
 
   .ant-input-affix-wrapper-lg {
@@ -617,7 +627,7 @@ font-family: 'Poppins';
 }
 
 .ant-select-single .ant-select-selector {
-    padding: 35px 78px;
+    padding: 35px 0px;
     color: #fff;
     font-size: 16px;
     line-height: 1.5714285714285714;
@@ -627,5 +637,117 @@ font-family: 'Poppins';
     border: none;
     background: transparent;
     border-bottom: 2px solid #fff;
+}
+
+.ant-select-single {
+    width: 100%;
+}
+
+.ant-select .ant-select-arrow  {
+  color: #162d6d;
+  margin-top: 14px;
+}
+.ant-select-single .ant-select-selector .ant-select-selection-item{
+  color: #162d6d;
+  font-weight: 700;
+}
+
+.ant-input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    border-radius: 0px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.subBtn{
+  width: 12vw;
+    height: 8vh;
+    border-radius: 5px;
+    border: none;
+    background: #162d6d;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Poppins';
+}
+
+.subBtn:hover{
+    border: 2px solid #fff;
+    background: transparent;
+}
+
+.icons{
+  font-size: 28px;
+  padding-top: 5px;
+}
+
+@media screen and (max-width: 992px) {
+
+  .center{
+    display: block;
+    padding: 50px 0px;
+    border-radius: 0px 50px 0px 50px;
+  }
+
+  .contactRes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .leftTitle {
+    font-size: 4vw;
+  }
+
+  .forms{
+    border-radius: 0px 50px 0px 50px;
+    margin-top: 50px;
+  }
+
+  .subBtn{
+    width: 18vw;
+    height: 7vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  margin: 40px 20px;
+      padding: 0px;
+
+      .leftTitle {
+    font-size: 5vw;
+  }
+
+  .center{
+    padding: 30px 0px;
+  }
+
+  .forms{
+    padding: 30px 50px;
+  }
+
+  .row{
+    row-gap: 35px !important;
+  }
+
+  .textArea{
+    margin-top: 30px;
+  }
+
+  .subBtn{
+    width: 26vw;
+    height: 7vh;
+  }
+
+}
+
+@media screen and (max-width: 555px) {
+
+      .leftTitle {
+    font-size: 7vw;
+  }
+
 }
 `;
