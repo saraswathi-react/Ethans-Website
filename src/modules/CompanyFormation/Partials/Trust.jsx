@@ -8,7 +8,11 @@ import BacktoTopPage from '@modules/BacktoTop/BacktoTopPage'
 const Trust = () => {
     return (
         <>
-            <BannerText className='bannerText'><h1>Trust</h1> </BannerText>
+            <BannerText className='bannerText'><h1>Trust</h1>
+            </BannerText>
+            <svg viewBox="0 70 500 70">
+                <path d="M 0,100 C 150,200 350,0 500,100 L 500,00 L 0,0" fill="#162d6d"></path>
+            </svg>
             <TrustSection>
                 <h2>Trust/Non Profit Company</h2>
                 {/* <svg viewBox="0 0 500 200">
@@ -17,10 +21,12 @@ const Trust = () => {
                 <path d="M 0 50 C 215 150 250 0 500 100 L 500 0 L 0 0" fill="#162d6d" opacity="0.5"></path>
             </svg> */}
                 <div className='OnlyFlex'><MdOutlineDiamond /><p>Trust or a Non Profit Company can be registered under two categories in India</p></div>
-                <div className='OnlyFlex'><MdOutlineDiamond /><p>First and most common form is registering it under trust Act, second form is  registering it as private limited company under companies act, 2013</p></div>
+                <div className='OnlyFlex'><MdOutlineDiamond /><p>First and most common form is registering
+                    it under trust Act, second form is registering<div> it as private limited company
+                        under companies act, 2013</div></p></div>
                 <h2>Features and Difference between both form of organization</h2>
                 <br />
-                <div style={{ overflowX: 'auto' }}>
+                <div className='Tableresp'>
                     <table id="customers" >
                         <tr>
                             <th>Particulars</th>

@@ -148,19 +148,22 @@ export const TrustSection = styled.div`
         color: #f96156;
     }
     .OnlyFlex {
-        display: flex;
-        align-items: center;
-        gap: 10PX;
-        margin: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10PX;
+            margin: 20px;
+            & svg {
+            color: #f96156;
+        /* margin-right: 20px; */
+        }
+        & p {
+            font-weight: 500;
+            color: #919191;
+            font-size: 18px;
+        }
     }
-    & p {
-        font-weight: 500;
-        color: #919191;
-        font-size: 18px;
-    }
-    & svg {
-        color: #f96156;
-    }
+    
+    
 
     #customers {
         border-collapse: collapse;
@@ -183,6 +186,35 @@ export const TrustSection = styled.div`
     background-color: #162d6d;
     color: white;
     }
+    .Tableresp {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .DiamntPoint {
+        color: #f96156;
+        font-size: 25px;
+        margin-top: 2px;
+        font-family: 'Poppins';
+    }
+    .DiamtTxt {
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: #919191;
+        font-size: 18px;
+        line-height: 28px;
+        font-family: 'Poppins';
+    }
+
+    @media screen  and (max-width: 555px) {
+        margin: 40px 20px;
+        .OnlyFlex {
+            & svg {
+            color: #f96156;
+            font-size: 70px;
+            }
+        }
+    }
 `
 export const BannerText = styled.div`
     background-color: #162d6d;
@@ -192,7 +224,12 @@ export const BannerText = styled.div`
     justify-content: center;
     color: #fff;
     & h1 {
-        font-size: 8vw;
+        font-size: 5vw;
+    }
+    @media screen  and (max-width: 767px) {
+        & h1 {
+          font-size: 8vw !important;
+        }
     }
     
 `

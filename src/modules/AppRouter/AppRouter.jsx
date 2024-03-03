@@ -9,6 +9,8 @@ import Enquiry from '@modules/Enquiry';
 import BussinessService from '@modules/Bussiness/BussinessService/BussinessService';
 import IncomeTax from '@modules/Bussiness/Taxation/IncomeTax';
 import Trust from '@modules/CompanyFormation/Partials/Trust';
+import Propreitorship from '@modules/CompanyFormation/Partials/Partnership';
+import Partnership from '@modules/CompanyFormation/Partials/Propreitorship';
 
 
 
@@ -25,6 +27,8 @@ const AppRouter = () => {
                     <Route path="/bussiness" element={<BussinessService />} />
                     <Route path="/incomeTax" element={<IncomeTax />} />
                     <Route path="/trust" element={<Trust />} />
+                    <Route path="/propreitorship" element={<Propreitorship />} />
+                    <Route path="/partnership" element={<Partnership />} />
 
 
                     {/*  <Route path="/collection" element={<CustomizedGiftsCarousel/>}  />

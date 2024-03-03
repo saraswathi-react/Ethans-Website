@@ -143,7 +143,7 @@ export const NavCollapse = styled.div`
     padding: 10px 2px;
     border-radius: 50px;
     cursor: pointer;
-    transition: 0.5s;
+    /* transition: 0.5s; */
     &:hover {
       color: var(--brown-color);
       /* background: #252525; */
@@ -154,7 +154,7 @@ export const NavCollapse = styled.div`
    
   }
   @media screen and (min-width: 1207px) and (max-width: 2900px){
-        & span { padding: 10px 16px;}
+        /* & span { padding: 10px 16px;} */
   }
   @media screen and (max-width:992px) {
     position: absolute;

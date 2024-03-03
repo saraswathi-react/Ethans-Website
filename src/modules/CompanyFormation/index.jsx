@@ -3,8 +3,8 @@ import { OnePersonCompany } from './Partials/OnePersonCompany'
 
 const CompanyFormation = () => {
   return (
-<OnePersonCompany/>
-    )
+    <OnePersonCompany />
+  )
 }
 
 export default CompanyFormation

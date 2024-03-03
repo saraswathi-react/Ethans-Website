@@ -11,8 +11,10 @@ import { BsFillXDiamondFill } from "react-icons/bs";
 const Footersection = () => {
     return (
         <div>
+            {/* <svg viewBox="0 -2 500 130">
+                <path d="M 0,96 C 150,196 350,-4 500,96 L 500,196 L 0,196" fill="red"></path>
+            </svg> */}
             <FooterStyle>
-
                 <Row>
                     <Col span={24} md={12} lg={6}>
                         <h1>Logo</h1>
