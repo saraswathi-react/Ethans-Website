@@ -18,7 +18,7 @@ const MenuItems = ({ items, depthLevel }) => {
             {items.submenu ? (
                 <div className="SubMainMenu" style={depthLevel > 0 ? null : { padding: '0 10px' }}>
                     <div className="subMenuItems"  aria-haspopup="menu" aria-expanded={dropdown ? "true" : "false"} onClick={() => setDropdown((prev) => !prev)}>
-                        {items.title} {depthLevel > 0 ? <span>&raquo;</span> : <span className="arrow" />}
+                        {items.title} {depthLevel > 0 ? <span className="arrowclr">&raquo;</span> : <span className="arrow" />}
                     </div>
                     <Dropdown depthLevel={depthLevel} submenus={items.submenu} dropdown={dropdown} />
                 </div>

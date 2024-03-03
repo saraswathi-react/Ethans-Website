@@ -63,12 +63,12 @@ export const NavHeader = () => {
         },
         {
           title: "Partnership",
-          path: "/about"
+          path: "/partnership"
 
         },
         {
           title: "Propreitorship",
-          path: "/about"
+          path: "/propreitorship"
 
         },
         {

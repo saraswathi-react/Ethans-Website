@@ -77,6 +77,7 @@ nav{
 .menu-items {
   position: relative;
   font-size: 14px;
+  padding: 0 5px;
 }
 
 .menu-items a {
@@ -119,6 +120,9 @@ nav{
 .menu-items .subMenuItems:hover{
   background-color: #162d6d;
   color: #fff;
+  .arrowclr {
+    color: #fff;
+  }
 }
 
 .arrow::after {
@@ -135,8 +139,7 @@ nav{
   position: absolute;
   right: 0;
   left: auto;
-  box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
-              0 4px 6px -2px rgba(71, 63, 79, 0.16);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   font-size: 0.875rem;
   z-index: 9999;
   min-width: 15rem;
