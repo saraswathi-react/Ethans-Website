@@ -108,6 +108,7 @@ export const BannerStyle = styled.div`
         }
     }
 `
+
 export const Person = styled.div`
 
 .parag{
@@ -137,4 +138,61 @@ padding-top: 20px;
   
 }
 
+`
+
+// -------- Trust page style
+
+export const TrustSection = styled.div`
+    margin: 40px 60px;
+    & h2  {
+        color: #f96156;
+    }
+    .OnlyFlex {
+        display: flex;
+        align-items: center;
+        gap: 10PX;
+        margin: 20px;
+    }
+    & p {
+        font-weight: 500;
+        color: #919191;
+        font-size: 18px;
+    }
+    & svg {
+        color: #f96156;
+    }
+
+    #customers {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    }
+
+    #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+    #customers tr:hover {background-color: #ddd;}
+
+    #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #162d6d;
+    color: white;
+    }
+`
+export const BannerText = styled.div`
+    background-color: #162d6d;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    & h1 {
+        font-size: 8vw;
+    }
+    
 `

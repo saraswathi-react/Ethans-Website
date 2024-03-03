@@ -9,6 +9,7 @@ import styled from 'styled-components'
 import { SvgIcons } from '@assets/Svg'
 import BacktoTopPage from '@modules/BacktoTop/BacktoTopPage'
 import { IoIosArrowDroprightCircle } from "react-icons/io";
+import Footersection from '@modules/Footer/Footersection'
 
 
 const ClientPage = () => {
@@ -120,13 +121,14 @@ const ClientPage = () => {
                     </Col>
                 </Row>
 
-                <BacktoTopPage />
             </ClienteStyle>
 
             <MiniFooter>
                 <h2>Looking for a First - Class Business Consultant ?</h2>
                 <div className='ButnContect'><div>Contact Us</div> <IoIosArrowDroprightCircle /></div>
             </MiniFooter>
+            <Footersection />
+            <BacktoTopPage />
         </div>
     )
 }
