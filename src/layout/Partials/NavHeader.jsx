@@ -40,16 +40,21 @@ export const NavHeader = () => {
       submenu: [
         {
           title: "One Person Company",
-          path: "/about",
+          path: "/OnePersonCompany"
         },
         {
           title: "Private Limited Company",
-          path: "/privatelimited",
+          path: "/PrivateLimitedcompany"
+
         },
         {
           title: "Public Limited Company",
-          path: "/about",
+          path: "/publiclimitedcompany"
         },
+//         {
+//           title: "Private Limited Company",
+//           path: "/privatelimited",
+//         },
         {
           title: "Limited Liability Partnership",
           path: "/liabilitypartnership"

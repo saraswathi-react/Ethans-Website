@@ -36,8 +36,7 @@ const Partnership = () => {
 
     return (
         <div>
-            <BannerText className='bannerText'><h1>Propreitorship</h1>
-            </BannerText>
+            <BannerText className='bannerText'><h1>Propreitorship</h1>           </BannerText>
             <svg viewBox="0 70 500 70">
                 <path d="M 0,100 C 150,200 350,0 500,100 L 500,00 L 0,0" fill="#162d6d"></path>
             </svg>
