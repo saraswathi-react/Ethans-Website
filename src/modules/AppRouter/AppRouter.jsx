@@ -11,6 +11,8 @@ import IncomeTax from '@modules/Bussiness/Taxation/IncomeTax';
 import Trust from '@modules/CompanyFormation/Partials/Trust';
 import Propreitorship from '@modules/CompanyFormation/Partials/Partnership';
 import Partnership from '@modules/CompanyFormation/Partials/Propreitorship';
+import ForeignBranches from '@modules/Bussiness/Investment/ForeignBranches';
+import IndiaOffice from '@modules/Bussiness/Investment/IndiaOffice';
 
 
 
@@ -29,6 +31,8 @@ const AppRouter = () => {
                     <Route path="/trust" element={<Trust />} />
                     <Route path="/propreitorship" element={<Propreitorship />} />
                     <Route path="/partnership" element={<Partnership />} />
+                    <Route path="/foreignBranches" element={<ForeignBranches />} />
+                    <Route path="/indiaOffice" element={<IndiaOffice />} />
 
 
                     {/*  <Route path="/collection" element={<CustomizedGiftsCarousel/>}  />

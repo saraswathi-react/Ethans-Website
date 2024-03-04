@@ -43,7 +43,7 @@ export const TopNavBar = styled.nav`
     font-size: 16px;
     padding: 10px;
     font-weight: 500;
-    text-align: start;
+    text-align: center;
     margin: 0;
 }
 
@@ -112,7 +112,7 @@ a:-webkit-any-link:hover {
     }
   }
 
-  @media screen and (max-width: 1040px) {
+  @media screen and (max-width: 1160px) {
     .ContactDetail { 
       display: none;
     }
@@ -163,10 +163,11 @@ export const NavCollapse = styled.div`
     padding:20px;
     gap: 0;
     width: 100%;
-    top: 70px;
+    top: 100px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     right: 0;
     background-color: #f3f8ff;
+    z-index: 1;
 
     & a {
       display: block;
