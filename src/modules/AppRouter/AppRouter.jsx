@@ -11,6 +11,7 @@ import IncomeTax from '@modules/Bussiness/Taxation/IncomeTax';
 import Trust from '@modules/CompanyFormation/Partials/Trust';
 import Propreitorship from '@modules/CompanyFormation/Partials/Partnership';
 import Partnership from '@modules/CompanyFormation/Partials/Propreitorship';
+import { PublicLimitedCompany } from '@modules/CompanyFormation/Partials/PublicLimitedCompany';
 
 
 
@@ -20,8 +21,11 @@ const AppRouter = () => {
             <Routes>
                 <Route path='/' element={<NavHeader />}>
                     <Route path="/" element={<MainIndex />} />
-                    <Route path="/about" element={<CompanyFormation />} />
-                    <Route path="/privatelimited" element={<PrivateLimitedcompany />} />
+                    <Route path="/OnePersonCompany" element={<CompanyFormation />} />
+                    <Route path="/PrivateLimitedcompany" element={<PrivateLimitedcompany />} />
+
+                    <Route path="/publiclimitedcompany" element={<PublicLimitedCompany />} />
+
                     <Route path="/clientele" element={<ClientPage />} />
                     <Route path="/enquiry" element={<Enquiry />} />
                     <Route path="/bussiness" element={<BussinessService />} />

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { CarouselCards, ClienteStyle, MiniFooter } from './Style'
 import { Col, Row } from 'antd'
 import BlureImg from '../../../assets/Image/blure.gif'
@@ -11,6 +11,7 @@ import BacktoTopPage from '@modules/BacktoTop/BacktoTopPage'
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import Footersection from '@modules/Footer/Footersection'
 
+import {  useNavigate } from 'react-router-dom';
 
 const ClientPage = () => {
 
@@ -61,6 +62,15 @@ const ClientPage = () => {
         },
     ]
 
+
+    // const [connect, setconnect] = useState([]);
+    
+    // const goToContact = (data) => {
+
+    //     };
+
+    const navigation = useNavigate()
+
     return (
         <div>
             <ClienteStyle>
@@ -93,8 +103,7 @@ const ClientPage = () => {
                                     <p>Contact us at the Consulting WP office nearest to you or submit a business inquiry online.</p>
                                     <div className='ButonSty'>
                                         <div><IoCall /></div>
-                                        <h4>Contact Us</h4>
-                                    </div>
+                                        <h4 onClick={() => navigation('/enquiry')}>Contact Us</h4>                                    </div>
                                     {/* <div className='CircleImgr'><img src={CircleImg}  /> </div> */}
                                 </div>
                             </Col>
@@ -125,7 +134,11 @@ const ClientPage = () => {
 
             <MiniFooter>
                 <h2>Looking for a First - Class Business Consultant ?</h2>
-                <div className='ButnContect'><div>Contact Us</div> <IoIosArrowDroprightCircle /></div>
+                <div className='ButnContect'>
+
+                    <div onClick={() => navigation('/enquiry')}>Contact Us</div>
+
+                     <IoIosArrowDroprightCircle /></div>
             </MiniFooter>
             <Footersection />
             <BacktoTopPage />
