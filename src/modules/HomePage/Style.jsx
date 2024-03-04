@@ -39,18 +39,33 @@ export const BannerStyle = styled.div`
     display: flex;
     text-transform: uppercase;
     font-weight: 700;
-    color: #000;
     margin: 50px;
     gap: 30px;
     .BtnOne {
       padding: 15px 30px;
-      border: 2px solid #ff5a58;
+      color: #ffffff;
+      border: 2px solid #0000;
       border-radius: 30px;
+      cursor: pointer;
+      background-color: #f96156;
+    }
+    .BtnOne:hover {
+      border: 2px solid #f96156;
+      background-color: #fff;
+      color: #f96156;
     }
     .BtnTwo {
       padding: 15px 30px;
-      border: 2px solid #4aafff;
+      cursor: pointer;
+      border: none;
+      color: #ffffff;
       border-radius: 30px;
+      background-color: #162d6d;
+    }
+    .BtnTwo:hover{
+      border: 2px solid #162d6d;
+      background-color: #fff;
+      color: #162d6d;
     }
   }
   @media screen and (max-width: 769px) {
@@ -303,6 +318,7 @@ export const StyledService = styled.div`
   padding: 50px;
   border-radius: 0px 50px 0px 50px;
   position: relative;
+  font-family: 'Poppins';
   .serviceBox {
     border-radius: 0px 50px 0px 50px;
     background: #162d6d;
@@ -321,14 +337,19 @@ export const StyledService = styled.div`
     color: white;
   }
   button {
-    text-transform: uppercase;
+    text-transform: capitalize;
     background-color: #f96156;
     border-style: solid;
-    border-width: 2px 2px 2px 2px;
+    border-width: 2px;
+    font-family: 'Poppins';
     border-color: #f96156;
-    border-radius: 7px 7px 7px 7px;
-    padding: 10px 35px 10px 35px;
+    border-radius: 7px;
+    padding: 10px 25px;
     margin-top: 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
   }
   button:hover {
     color: #162d6d;
