@@ -58,7 +58,7 @@ export const NavHeader = () => {
         },
         {
           title: "Limited Liability Partnership",
-          path: "/about"
+          path: "/liabilitypartnership"
 
         },
         {
@@ -113,15 +113,15 @@ export const NavHeader = () => {
           submenu: [
             {
               title: "Import Export Code (IEC)",
-              path: "/frontend",
+              path: "/importexportcode",
             },
             {
               title: "FCRA Registrations",
-              path: "/backend",
+              path: "/fcraregistration",
             },
             {
               title: "Udayam Registrations",
-              path: "/backend",
+              path: "/udayamregistration",
             },
           ],
         },
@@ -137,7 +137,7 @@ export const NavHeader = () => {
     },
     {
       title: "Blog",
-      path: "/about"
+      path: "/blog"
     },
 
   ];

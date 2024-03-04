@@ -58,6 +58,7 @@ export const GetInTochStyle = styled.div`
             background-color: #f96156;
             border-radius: 50%;
             border: 3px solid #f96156;
+            cursor: pointer;
             & svg {
                 font-size: 20px;
                 color: #fff;
