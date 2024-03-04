@@ -16,10 +16,10 @@ const MainIndex = () => {
     <div>
       <BannerSection /><br />
       <ServiceAbout />
-      <ServiceDifferent />
       <Services />
-      <CarousalSuccess />
+      <ServiceDifferent />
       <Counter/>
+      <CarousalSuccess />
       <ContactUs/>
       <Footersection />
       <BacktoTopPage />

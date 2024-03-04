@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const BussinessSer = styled.div`
-  margin: 0px 100px;
+  margin: 0px 30px 50px 30px;
   .pageTitle {
     padding: 100px 0px;
   }
@@ -21,22 +21,24 @@ export const BussinessSer = styled.div`
     background: #f96156;
   }
 
-  .box {
-    width: fit-content;
-    background: #f96156;
-    color: #fff;
-    padding: 30px;
-    font-size: larger;
-    line-height: 31px;
-    border-radius: 10px;
-    border: 5px solid #f96156;
-  }
+  h2  {
+        color: #f96156;
+    }
 
-  .box:hover {
-    background: #162d6d;
-    border: 5px solid #f96156;
-    box-shadow: 5px 5px 20px rebeccapurple;
-  }
+    .DiamntPoint {
+        color: #f96156;
+        font-size: 25px;
+        margin-top: 2px;
+        font-family: 'Poppins';
+    }
+    .DiamtTxt {
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: #919191;
+        font-size: 18px;
+        line-height: 28px;
+        font-family: 'Poppins';
+    }
 
   @media screen and (max-width: 992px) {
 
@@ -58,4 +60,7 @@ export const BussinessSer = styled.div`
   }
 
   }
+
+
+  
 `;

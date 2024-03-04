@@ -2,15 +2,16 @@ import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import Dropdown from "./Dropdown";
 
-const MenuItems = ({ items, depthLevel }) => {
+const MenuItems = ({ items, depthLevel,showBusinessServices,name }) => {
+
     const [dropdown, setDropdown] = useState(false);
 
     const onMouseEnter = () => {
-        window.innerWidth > 960 && setDropdown(true);
+        window.innerWidth > 992 && setDropdown(true);
     };
 
     const onMouseLeave = () => {
-        window.innerWidth > 960 && setDropdown(false);
+        window.innerWidth > 992 && setDropdown(false);
     };
 
     return (
@@ -20,7 +21,7 @@ const MenuItems = ({ items, depthLevel }) => {
                     <div className="subMenuItems"  aria-haspopup="menu" aria-expanded={dropdown ? "true" : "false"} onClick={() => setDropdown((prev) => !prev)}>
                         {items.title} {depthLevel > 0 ? <span className="arrowclr">&raquo;</span> : <span className="arrow" />}
                     </div>
-                    <Dropdown depthLevel={depthLevel} submenus={items.submenu} dropdown={dropdown} />
+                 <Dropdown name={name} showBusinessServices={showBusinessServices} depthLevel={depthLevel} submenus={items.submenu} dropdown={dropdown}/>
                 </div>
             ) : (
                 <Link to={`${items.path}`}>{items.title}</Link>
@@ -29,6 +30,7 @@ const MenuItems = ({ items, depthLevel }) => {
         </li>
     );
 };
+
 
 export default MenuItems;
 

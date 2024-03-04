@@ -12,6 +12,16 @@ import Trust from '@modules/CompanyFormation/Partials/Trust';
 import Propreitorship from '@modules/CompanyFormation/Partials/Partnership';
 import Partnership from '@modules/CompanyFormation/Partials/Propreitorship';
 import { PublicLimitedCompany } from '@modules/CompanyFormation/Partials/PublicLimitedCompany';
+import ForeignBranches from '@modules/Bussiness/Investment/ForeignBranches';
+import IndiaOffice from '@modules/Bussiness/Investment/IndiaOffice';
+import LiabilityPartnership from '@modules/CompanyFormation/Partials/LiabilityPartnership';
+import ImportExportCode from '@modules/Bussiness/Others/ImportExportCode';
+import FCRARegistration from '@modules/Bussiness/Others/FCRARegistration';
+import UdayamRegistration from '@modules/Bussiness/Others/UdayamRegistration';
+import BlogMain from '@modules/Blog/Index';
+import IncomeTaxSlab from '@modules/Blog/Partials/IncomeTaxSlab';
+import FFMCLicense from '@modules/Blog/Partials/FFMC';
+
 
 
 
@@ -33,7 +43,17 @@ const AppRouter = () => {
                     <Route path="/trust" element={<Trust />} />
                     <Route path="/propreitorship" element={<Propreitorship />} />
                     <Route path="/partnership" element={<Partnership />} />
-
+                    <Route path="/foreignBranches" element={<ForeignBranches />} />
+                    <Route path="/indiaOffice" element={<IndiaOffice />} />
+                    <Route path="/liabilitypartnership" element={<LiabilityPartnership />} />
+                    <Route path="/importexportcode" element={<ImportExportCode />} />
+                    <Route path="/fcraregistration" element={<FCRARegistration />} />
+                    <Route path="/udayamregistration" element={<UdayamRegistration />} />
+                    <Route path="/blog" element={<BlogMain />} />
+                    <Route path="/incometaxslab" element={<IncomeTaxSlab />} />
+                    <Route path="/ffmclicense" element={<FFMCLicense />} />
+                    
+                    
 
                     {/*  <Route path="/collection" element={<CustomizedGiftsCarousel/>}  />
         <Route path="/enquiry" element={<Profile/>}  />

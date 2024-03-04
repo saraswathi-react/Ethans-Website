@@ -37,7 +37,7 @@ nav{
   justify-content: space-around;
 
   @media screen and (max-width: 992px) {
-    height: auto;
+    height: 100%;
   }
 
 }
@@ -108,7 +108,7 @@ nav{
 .menu-items .subMenuItems{
   padding: 10px ;
   font-family: 'Poppins';
-  text-align: left;
+  text-align: center;
   font-size: 15px;
   color: #0e0e0e;
   font-weight: 500;
@@ -162,12 +162,35 @@ nav{
   left: 100%;
   top: -11px;
 }
+
 @media screen and (min-width:2048px){
   zoom:1.5;
 }
 
 @media screen and (min-width:3840px){
   zoom:2;
+}
+
+@media screen and (max-width: 992px) {
+  .dropdown {
+  position: relative;
+  box-shadow: none;
+  background-color: transparent;
+  text-align: center;
+  height: 100%;
+}
+
+.menu-items .subMenuItems:hover{
+  background: none;
+  color: #000;
+  .arrowclr {
+    color: #fff;
+  }
+}
+
+.dropdown.dropdown-submenu {
+  position: static;
+}
 }
 `
 
