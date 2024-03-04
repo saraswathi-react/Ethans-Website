@@ -11,6 +11,8 @@ import IncomeTax from '@modules/Bussiness/Taxation/IncomeTax';
 import Trust from '@modules/CompanyFormation/Partials/Trust';
 import Propreitorship from '@modules/CompanyFormation/Partials/Partnership';
 import Partnership from '@modules/CompanyFormation/Partials/Propreitorship';
+import ForeignBranches from '@modules/Bussiness/Investment/ForeignBranches';
+import IndiaOffice from '@modules/Bussiness/Investment/IndiaOffice';
 import LiabilityPartnership from '@modules/CompanyFormation/Partials/LiabilityPartnership';
 import ImportExportCode from '@modules/Bussiness/Others/ImportExportCode';
 import FCRARegistration from '@modules/Bussiness/Others/FCRARegistration';
@@ -36,6 +38,8 @@ const AppRouter = () => {
                     <Route path="/trust" element={<Trust />} />
                     <Route path="/propreitorship" element={<Propreitorship />} />
                     <Route path="/partnership" element={<Partnership />} />
+                    <Route path="/foreignBranches" element={<ForeignBranches />} />
+                    <Route path="/indiaOffice" element={<IndiaOffice />} />
                     <Route path="/liabilitypartnership" element={<LiabilityPartnership />} />
                     <Route path="/importexportcode" element={<ImportExportCode />} />
                     <Route path="/fcraregistration" element={<FCRARegistration />} />
@@ -45,6 +49,7 @@ const AppRouter = () => {
                     <Route path="/ffmclicense" element={<FFMCLicense />} />
                     
                     
+
                     {/*  <Route path="/collection" element={<CustomizedGiftsCarousel/>}  />
         <Route path="/enquiry" element={<Profile/>}  />
         <Route path="/cart" element={<ProductViewPage />} /> */}
