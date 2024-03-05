@@ -1,6 +1,5 @@
 import React from 'react'
 import { BannerText, TrustSection } from '../style'
-import TrustImg from '@assets/Image/trust.jpg'
 import { MdOutlineDiamond } from 'react-icons/md'
 import Footersection from '@modules/Footer/Footersection'
 import BacktoTopPage from '@modules/BacktoTop/BacktoTopPage'
@@ -15,11 +14,7 @@ const Trust = () => {
             </svg>
             <TrustSection>
                 <h2>Trust/Non Profit Company</h2>
-                {/* <svg viewBox="0 0 500 200">
-                <path d="M 0 50 C 150 150 300 0 500 80 L 500 0 L 0 0" fill="#162d6d"></path>
-                <path d="M 0 50 C 150 150 330 -30 500 50 L 500 0 L 0 0" fill="#2a4fb5" opacity="0.8"></path>
-                <path d="M 0 50 C 215 150 250 0 500 100 L 500 0 L 0 0" fill="#162d6d" opacity="0.5"></path>
-            </svg> */}
+                
                 <div className='OnlyFlex'><MdOutlineDiamond /><p>Trust or a Non Profit Company can be registered under two categories in India</p></div>
                 <div className='OnlyFlex'><MdOutlineDiamond /><p>First and most common form is registering
                     it under trust Act, second form is registering<div> it as private limited company

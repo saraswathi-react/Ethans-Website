@@ -9,6 +9,12 @@ export const BannerStyle = styled.div`
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
+
+  & p {
+      font-weight: 500;
+      color: #919191;
+      font-size: 18px;
+  }
   .bannerimg {
     width: 60%;
     float: right;
@@ -113,6 +119,11 @@ export const ServiceAbt = styled.div`
   font-family: "Poppins";
   margin-top: 50px;
   margin: 60px 90px;
+  /* & p {
+      font-weight: 500;
+      color: #919191;
+      font-size: 18px;
+  } */
   .Topheading {
     text-align: center;
     & h1 {
@@ -139,6 +150,9 @@ export const ServiceAbt = styled.div`
   & p {
     text-align: center;
     margin: 20px;
+    font-weight: 500;
+    color: #919191;
+    font-size: 18px;
   }
   .BoxService {
     background-color: #f96156;
@@ -158,6 +172,7 @@ export const ServiceAbt = styled.div`
     }
     & p {
       font-size: 16px;
+      color: #fff;
     }
     .BtnReadMore {
       text-align: center;
@@ -167,6 +182,7 @@ export const ServiceAbt = styled.div`
       border: 2px solid #fff;
       border-radius: 30px;
       display: inline-block;
+      cursor: pointer;
     }
   }
   .BoxService:hover {
@@ -243,7 +259,7 @@ export const TotalService = styled.div`
     color: #f96156;
     padding: 0 20px;
     font-weight: 800;
-    margin-top: 25px;
+    /* margin-top: 25px; */
   }
   .subheading2 {
     font-size: 27px;
@@ -251,13 +267,14 @@ export const TotalService = styled.div`
     color: #162d6d;
     padding: 0 20px;
     font-weight: 800;
-    margin-top: 25px;
+    /* margin-top: 25px; */
   }
   & p {
     font-size: 18px;
-    color: #7a7878;
+    color: #919191;
     font-weight: 600;
     padding: 20px;
+    font-family: "Poppins";
     line-height: 30px;
     width: 80%;
   }

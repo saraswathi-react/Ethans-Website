@@ -1,6 +1,6 @@
 import React from 'react'
 import { FeedbackformStyle } from '../Style'
-import { Button, Col, Form, Input, InputNumber, Row } from 'antd'
+import { Button, Col, Form, Input, Row } from 'antd'
 
 const Feedbackform = () => {
 

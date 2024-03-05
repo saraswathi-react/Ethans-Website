@@ -1,13 +1,9 @@
-import { BannerText, OneStyle, Person, TrustSection } from '../style'
+import { BannerText, Person, TrustSection } from '../style'
 import React from 'react'
-import BannerImg from '../../../assets/Image/one.png'
 import pic1 from '../../../assets/Image/two.jpg'
 import pic2 from '../../../assets/Image/Attached files-bro.svg'
 import pic3 from '../../../assets/Image/three.jpg'
 import { Row, Col } from 'antd'
-import { BannerStyle } from '../style'
-import { IoIosCheckbox } from "react-icons/io";
-import { color } from 'framer-motion'
 import { MdOutlineDiamond } from 'react-icons/md'
 import BacktoTopPage from '@modules/BacktoTop/BacktoTopPage'
 import Footersection from '@modules/Footer/Footersection'
@@ -41,6 +37,7 @@ export const OnePersonCompany = () => {
             txt: 'Audit and filling of annual return with ROC Compulsory for One Person Company'
         }
     ]
+
     const company = [
         {
             txt: ' Apply Digital Signature Certificate (DSC) for proposed member/shareholder'
@@ -98,6 +95,7 @@ export const OnePersonCompany = () => {
         },
 
     ]
+
     return (
         <div>
             <Person>
@@ -116,7 +114,7 @@ export const OnePersonCompany = () => {
                     ))
                     }
                     <br />
-                    <h2 style={{ color: "#ff5a58",}}>One Person Company Incorporation Process</h2><br /><br />
+                    <h2 style={{ color: "#ff5a58", }}>One Person Company Incorporation Process</h2><br /><br />
                     <Row>
 
                         <Col span={24} md={6} lg={12} >

@@ -1,45 +1,29 @@
 import React, { useState } from "react";
-import { Iconplace, LogoPlace, NavCollapse, TopNavBar } from "./Style";
-// import Logo from '@assets/images/Logo.png'
-import { NavLink, Outlet, useNavigate } from "react-router-dom";
-// import { Button } from "@components/form";
-import { FiShoppingCart } from "react-icons/fi";
-// import whatsappLogo from '@assets/images/whatsappLogo.png'
+import { Iconplace, NavCollapse, TopNavBar } from "./Style";
+import { Outlet, useNavigate } from "react-router-dom";
 import { MdOutlineMenu } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
-import { Button, Flex } from "antd";
-import MenuItems from "./MenuItems";
+import { Tooltip } from "antd";
 import Logo from '@assets/Image/logo.png'
 import NewMenu from "./NewMenu";
+import { HiInformationCircle } from "react-icons/hi";
 
 export const NavHeader = () => {
+
   const navigate = useNavigate();
 
   const [isOpen, setIsOpen] = useState(true);
 
-  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
-
-  const [showSubmenu, setShowSubmenu] = useState(false);
-
-  const [showBusinessServices, setShowBusinessServices] = useState(false);
-
-  const toggleSubmenu = () => {
-    setShowSubmenu(!showSubmenu);
-  };
-
-  const handleToggleSubmenu = () => {
-    setIsSubmenuOpen(!isSubmenuOpen);
-  };
 
   const menuItems = [
     {
       title: "Home",
       path: "/",
-      menu:'',
+      menu: '',
     },
     {
       title: "Company Formation",
-      menu:'drop1',
+      menu: 'drop1',
       submenu: [
         {
           title: "One Person Company",
@@ -54,10 +38,10 @@ export const NavHeader = () => {
           title: "Public Limited Company",
           path: "/publiclimitedcompany"
         },
-//         {
-//           title: "Private Limited Company",
-//           path: "/privatelimited",
-//         },
+        //         {
+        //           title: "Private Limited Company",
+        //           path: "/privatelimited",
+        //         },
         {
           title: "Limited Liability Partnership",
           path: "/liabilitypartnership"
@@ -78,7 +62,7 @@ export const NavHeader = () => {
     },
     {
       title: "Business Services",
-      menu:'drop2',
+      menu: 'drop2',
       submenu: [
         {
           title: "Services",
@@ -86,7 +70,7 @@ export const NavHeader = () => {
         },
         {
           title: "Taxation",
-          sublist:'drop1',
+          sublist: 'drop1',
           submenu: [
             {
               title: "Income Tax",
@@ -96,7 +80,7 @@ export const NavHeader = () => {
         },
         {
           title: "Foreign Trade and Investments",
-          sublist:'drop2',
+          sublist: 'drop2',
           submenu: [
             {
               title: "Foreign Branches In India",
@@ -110,7 +94,7 @@ export const NavHeader = () => {
         },
         {
           title: "Others",
-          sublist:'drop3',
+          sublist: 'drop3',
           submenu: [
             {
               title: "Import Export Code (IEC)",
@@ -131,57 +115,38 @@ export const NavHeader = () => {
     {
       title: "Clientele",
       path: "/clientele",
-      menu:'',
+      menu: '',
     },
     {
       title: "Enquiry",
       path: "/enquiry",
-      menu:'',
+      menu: '',
     },
     {
       title: "Blog",
       path: "/blog",
-      menu:'',
+      menu: '',
     },
   ];
-  const [name, setname] = useState("");
-  const handleMenu = (title) => {
-    console.log(title, "bugdy");
-    if (title === "Company Formation" || title === "Business Services") {
-      setShowBusinessServices((prev) => !prev);
-      setname(title);
-    }
-  };
+
+ 
+  const handlenContact = () => {
+    navigate('/enquiry')
+  }
 
   return (
     <div>
       <TopNavBar>
-        {/* <LogoPlace> */}
-        <img src={Logo} alt="Logo" style={{width:'130px'}} />
-        {/* <h2>kjhwe</h2> */}
+        
+        <img src={Logo} alt="Logo" style={{ width: '130px' }} />
         <NavCollapse State={`${isOpen ? "none" : "flex"}`}>
-          {/* <nav>
-            <ul className="menus">
-              {menuItems.map((menu, index) => {
-                const depthLevel = 0;
-                return (
-                  <div onClick={() => handleMenu(menu.title)}>
-                    <MenuItems
-                      name={name}
-                      items={menu}
-                      key={index}
-                      depthLevel={depthLevel}
-                    />
-                  </div>
-                );
-              })}
-            </ul>
-          </nav> */}
-          <NewMenu data={menuItems} toggle={isOpen}/>
+          <NewMenu data={menuItems} toggle={isOpen} />
         </NavCollapse>
-        {/* </LogoPlace> */}
 
-        <div className="ContactDetail">More Details</div>
+        <div className="ContactDetail" onClick={handlenContact}>More Details</div>
+        <Tooltip placement="top" title={'More Details'} className="ContactIcon">
+          <div onClick={handlenContact}><HiInformationCircle /></div>
+        </Tooltip>
 
         <Iconplace
           onClick={() => {

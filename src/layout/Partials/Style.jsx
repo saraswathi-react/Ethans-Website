@@ -102,7 +102,14 @@ a:-webkit-any-link:hover {
     padding: 10px 30px;
     color: #fff;
     border-radius: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     cursor: pointer;
+  }
+  .ContactIcon {
+    & svg {
+      font-size: 40px;
+      color: #f96156;
+    }
   }
 
   @media screen and (max-width: 376px) {
@@ -110,18 +117,19 @@ a:-webkit-any-link:hover {
       display: none;
     }
   }
+  @media screen and (min-width: 994px) {
+    .ContactIcon { 
+      display: none;
+      float: right;
+    }
+  }
 
-  @media screen and (max-width: 1160px) {
+  @media screen and (max-width: 1185px) {
     .ContactDetail { 
       display: none;
     }
   }
 
-  @media screen and (max-width: 992px) {
-    .whatsapplogo {
-    display: none;
-    }
- }
   
 `;
 
@@ -202,10 +210,8 @@ export const NavCollapse = styled.div`
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
-
-    
   }
-  }
+}
   .submenu a {
   color: black;
   /* margin-top: 10px; */

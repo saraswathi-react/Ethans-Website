@@ -1,8 +1,6 @@
 import React from 'react'
-import { BannerStyle, BannerText, OneStyle, Person, TrustSection } from '../style'
-import BannerImg from '../../../assets/Image/four.png'
+import { BannerText, OneStyle, Person, TrustSection } from '../style'
 import { Col, Collapse, Row } from 'antd';
-import { IoIosCheckbox } from "react-icons/io";
 import five from '../../../assets/Image/five.png'
 import six from '../../../assets/Image/six.png'
 import pic3 from '../../../assets/Image/three.jpg'

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { CarouselCards, ClienteStyle, MiniFooter } from './Style'
 import { Col, Row } from 'antd'
 import BlureImg from '../../../assets/Image/blure.gif'

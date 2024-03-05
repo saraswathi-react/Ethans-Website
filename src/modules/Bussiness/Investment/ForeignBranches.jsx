@@ -8,14 +8,14 @@ import BacktoTopPage from "@modules/BacktoTop/BacktoTopPage";
 
 const ForeignBranches = () => {
 
-    const Datas = [
-        {
-          txt: "Any body corporate such as firm , Company or Association of Person with a profit making track record of five financial year in the home country immediately preceding the year in which the branch is being set up and",
-        },
-        {
-          txt: "With a net worth of not less than USD 100K or equivalent as per the latest audited balance sheet or account statements certified by the public accountant.",
-        },
-      ];
+  const Datas = [
+    {
+      txt: "Any body corporate such as firm , Company or Association of Person with a profit making track record of five financial year in the home country immediately preceding the year in which the branch is being set up and",
+    },
+    {
+      txt: "With a net worth of not less than USD 100K or equivalent as per the latest audited balance sheet or account statements certified by the public accountant.",
+    },
+  ];
 
   return (
     <div>
@@ -59,22 +59,22 @@ const ForeignBranches = () => {
           </Row>
         ))}<br />
 
-<h2>Procedure to set up a branch office in India</h2>
+        <h2>Procedure to set up a branch office in India</h2>
         <br />
         <p>
-        Any Foreign entity intending to open a branch office has to submit an application form in FNC along with the supporting documents to RBI through the Authorised Dealer (The Bank)
+          Any Foreign entity intending to open a branch office has to submit an application form in FNC along with the supporting documents to RBI through the Authorised Dealer (The Bank)
         </p><br />
 
         <h2>Can a Company which is a subsidiary of group company and which does not satisfy the eligibility criteria start a branch office in India</h2>
         <br />
         <p>
-        Yes. A Subsidiary group company can start a branch office in India even if it does not meet the eligibility criteria subject to the parent company meeting the eligibility criteria and also after obtaining a letter of comfort from the parent company as per the format in Annexure 2 prescribed by Reserve Bank of India in their master circular on establishment of Liaison/Branch/Project offices in India by foreign Entities
+          Yes. A Subsidiary group company can start a branch office in India even if it does not meet the eligibility criteria subject to the parent company meeting the eligibility criteria and also after obtaining a letter of comfort from the parent company as per the format in Annexure 2 prescribed by Reserve Bank of India in their master circular on establishment of Liaison/Branch/Project offices in India by foreign Entities
         </p><br />
 
         <h2>Is branch office of a foreign company taxable in India</h2>
         <br />
         <p>
-        Yes. The profit made by the branch of a foreign company from any commercial activity in India is taxable as per the Income Tax Act, 1961. However, the countries which have DTAA (double tax avoidance agreement) with India can claim exemption for tax from their domicile countries for profit made from Indian operations.
+          Yes. The profit made by the branch of a foreign company from any commercial activity in India is taxable as per the Income Tax Act, 1961. However, the countries which have DTAA (double tax avoidance agreement) with India can claim exemption for tax from their domicile countries for profit made from Indian operations.
         </p><br />
       </StyledForeign>
 

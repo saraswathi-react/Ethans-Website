@@ -7,6 +7,7 @@ import { MdOutlineDiamond } from "react-icons/md";
 import { Col, Row } from "antd";
 
 const IndiaOffice = () => {
+  
   const Datas = [
     {
       txt: "Copies of last three years Balance Sheet, profit & Loss account of the parent company",

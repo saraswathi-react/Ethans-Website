@@ -3,7 +3,7 @@ import { GetInTochStyle } from '../Style'
 import { Col, Row } from 'antd'
 import { TiLocation } from "react-icons/ti";
 import { MdAddIcCall, MdAttachEmail } from 'react-icons/md';
-import { FaFacebookF, FaLinkedinIn, FaSkype, FaTwitter } from 'react-icons/fa';
+import { FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { AiFillInstagram } from 'react-icons/ai';
 
 const GetInTouch = () => {

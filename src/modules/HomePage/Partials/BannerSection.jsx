@@ -9,6 +9,9 @@ const BannerSection = () => {
   const handleClick = () => {
     nevigate('/enquiry')
   }
+  const handleClickRead = () => {
+    nevigate('/enquiry')
+  }
   
   return (
     <BannerStyle>
@@ -17,7 +20,7 @@ const BannerSection = () => {
         <p>Lorem Ipsum is simply dummy text of the printing and
           typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
         <div className='ButtonsBanner'>
-          <div className='BtnOne'>read More</div>
+          <div className='BtnOne' onClick={handleClickRead}>read More</div>
           <div className='BtnTwo' onClick={handleClick}>contact us</div>
         </div>
       </div>
