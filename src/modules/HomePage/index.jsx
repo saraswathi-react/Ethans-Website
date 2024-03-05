@@ -8,6 +8,7 @@ import BacktoTopPage from '@modules/BacktoTop/BacktoTopPage'
 import Counter from './Partials/Counter'
 import ContactUs from './Partials/ContactUs'
 import Footersection from '@modules/Footer/Footersection'
+import ChatBox from '@modules/ChatBot/ChatBox'
 
 
 
@@ -22,6 +23,7 @@ const MainIndex = () => {
       <CarousalSuccess />
       <ContactUs/>
       <Footersection />
+      <ChatBox/>
       <BacktoTopPage />
     </div>
   )
