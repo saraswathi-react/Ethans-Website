@@ -8,10 +8,8 @@ const NewMenu = ({ data, toggle }) => {
     const [subListMenu, setSubListMenu] = useState('')
 
     // sub:'drop1',
-    console.log(subMenu,subListMenu, 'llll');
 
-    const updateSubList = (arg)=>{
-        console.log(arg,'sub');
+    const updateSubList = (arg) => {
         setSubListMenu(arg)
 
     }
@@ -30,10 +28,12 @@ const NewMenu = ({ data, toggle }) => {
                                     <ul className={`list_submenu ${subMenu == item?.menu && "active"}`} >
                                         {item?.submenu?.map((sub, i2) => (
                                             <li key={i2} onClick={() => updateSubList(sub?.sublist)}>
-                                                <a href={sub?.path ? sub?.path : '#'}>{sub?.title} {sub?.sublist} {sub?.submenu && <b><MdOutlineKeyboardDoubleArrowRight /></b>}</a>
+                                                <a href={sub?.path ? sub?.path : '#'}>{sub?.title}
+                                                    {/* {sub?.sublist} */}
+                                                    {sub?.submenu && <b><MdOutlineKeyboardDoubleArrowRight /></b>}</a>
                                                 {
                                                     sub?.submenu && (
-                                                        <ul className={`sublist_submenu ${subListMenu == sub?.sublist && "active" } `}>
+                                                        <ul className={`sublist_submenu ${subListMenu == sub?.sublist && "active"} `}>
                                                             {sub?.submenu?.map((sublist, i3) => (
                                                                 <li key={i3}>
                                                                     <a href={sublist?.path ? sublist?.path : '#'}>{sublist?.title}</a>
@@ -76,7 +76,7 @@ const Holder = styled.nav`
                 font-size: 16px;
                 padding: 20px;
                 font-weight: 500;
-                text-align: center;
+                text-align: start;
                 transition:0.3s ease-out;
                 display:flex;
                 justify-content:space-between;
@@ -88,15 +88,16 @@ const Holder = styled.nav`
                 }
 
                 &:hover{
-                    background:#2b93e3;
+                    background:#162d6d;
+                    color: #fff;
                 }
             }
 
             ul{
                 position:absolute;
                 left:0;
-                width:200px;
-                background:#445964;
+                width:250px;
+                background:#f96156;
                 transition:.5s ease-in;
                 display:none;
                 z-index:10;
@@ -149,7 +150,7 @@ const Holder = styled.nav`
         width:100%;
         top:100px;
         left:0;
-        background:#445964;
+        background:#ededed;
         z-index:10;
         display:none;
 
@@ -157,7 +158,7 @@ const Holder = styled.nav`
             display:initial;
         }
         ul li:hover ul li{
-            background:#546e7b;
+            background:#f96156;
         }
     }
 `

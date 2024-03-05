@@ -1,8 +1,8 @@
 import React from 'react'
-import { FooterStyle, Imgg } from './Style'
+import { FooterStyle } from './Style'
 import { Col, Row } from 'antd'
-import WaveImg from '@assets/Image/wave.png'
-import { FaFacebookF, FaLinkedinIn, FaSkype, FaTwitter } from 'react-icons/fa'
+import LogoImg from '@assets/Image/footerLogo.png'
+import { FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 import { TiLocation } from 'react-icons/ti'
 import { FiPhoneCall } from 'react-icons/fi'
 import { MdAttachEmail } from 'react-icons/md'
@@ -12,13 +12,11 @@ import { AiFillInstagram } from 'react-icons/ai'
 const Footersection = () => {
     return (
         <div>
-            {/* <svg viewBox="0 -2 500 130">
-                <path d="M 0,96 C 150,196 350,-4 500,96 L 500,196 L 0,196" fill="red"></path>
-            </svg> */}
+
             <FooterStyle>
                 <Row>
                     <Col span={24} md={12} lg={6}>
-                        <h1>Logo</h1>
+                        <div > <img src={LogoImg} style={{ width: '60%' }} /></div>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever</p>
                     </Col>

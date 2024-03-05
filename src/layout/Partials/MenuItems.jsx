@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Dropdown from "./Dropdown";
 
 const MenuItems = ({ items, depthLevel,showBusinessServices,name }) => {

@@ -9,9 +9,7 @@ import { FiAtSign } from "react-icons/fi";
 import TextArea from "antd/es/input/TextArea";
 
 const ContactUs = () => {
-  const handleChange = (value) => {
-    console.log(value);
-  };
+ 
 
   const [formData, setFormData] = useState({
     name: '',

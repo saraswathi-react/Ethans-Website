@@ -21,7 +21,7 @@ const Counterss = ({ target, start, className }) => {
 
     // Cleanup function to clear timeouts
     return () => clearTimeout();
-  }, [count, target]);
+  }, [target]);
 
   return <h1 className={className}>{Math.floor(count)} {target === 78 ? "+" : ""}</h1>;
 };

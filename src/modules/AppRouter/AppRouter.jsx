@@ -33,9 +33,7 @@ const AppRouter = () => {
                     <Route path="/" element={<MainIndex />} />
                     <Route path="/OnePersonCompany" element={<CompanyFormation />} />
                     <Route path="/PrivateLimitedcompany" element={<PrivateLimitedcompany />} />
-
                     <Route path="/publiclimitedcompany" element={<PublicLimitedCompany />} />
-
                     <Route path="/clientele" element={<ClientPage />} />
                     <Route path="/enquiry" element={<Enquiry />} />
                     <Route path="/bussiness" element={<BussinessService />} />
