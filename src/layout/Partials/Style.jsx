@@ -19,7 +19,7 @@ export const LogoPlace = styled.div`
     }
 `;
 
-export const TopNavBar = styled.nav`
+export const TopNavBar = styled.header`
 /* position: fixed; */
   display: flex;
   justify-content: space-between;
@@ -36,7 +36,7 @@ export const TopNavBar = styled.nav`
   transition: 1s ease-out !important ;
   box-shadow: 0 4px 114.7px 0 rgba(206, 157, 212, 0.54);
 
-  a:-webkit-any-link {
+  /* a:-webkit-any-link {
     cursor: pointer;
     text-decoration: none;
     color: #0e0e0e;
@@ -51,11 +51,10 @@ a:-webkit-any-link:active {
     color: #162d6d;
     /* padding: 0 0 5px 0; */
     /* border-bottom: 1px solid #545454 !important; */
-}
+/* }
 a:-webkit-any-link:hover {
   color: #fff;
-    /* border-bottom: 1px solid #545454 !important; */
-}
+} */
   &.sticky {
     position: fixed;
     transition: all 1s ease-out !important;
@@ -156,7 +155,7 @@ export const NavCollapse = styled.div`
   @media screen and (min-width: 1207px) and (max-width: 2900px){
         /* & span { padding: 10px 16px;} */
   }
-  @media screen and (max-width:992px) {
+  /* @media screen and (max-width:992px) {
     position: absolute;
     display: ${(props) => props.State};
     flex-direction: column;
@@ -166,17 +165,16 @@ export const NavCollapse = styled.div`
     top: 100px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     right: 0;
-    background-color: #f3f8ff;
+    background-color: red;
     z-index: 1;
 
     & a {
       display: block;
-      /* text-align: center; */
       font-size:20px;
       border-radius: 0;
       line-height: 2rem;
     }
-  }
+  } */
 
   .submenu {
     position: absolute;

@@ -10,6 +10,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { Button, Flex } from "antd";
 import MenuItems from "./MenuItems";
 import Logo from '@assets/Image/logo.png'
+import NewMenu from "./NewMenu";
 
 export const NavHeader = () => {
   const navigate = useNavigate();
@@ -34,9 +35,11 @@ export const NavHeader = () => {
     {
       title: "Home",
       path: "/",
+      menu:'',
     },
     {
       title: "Company Formation",
+      menu:'drop1',
       submenu: [
         {
           title: "One Person Company",
@@ -75,6 +78,7 @@ export const NavHeader = () => {
     },
     {
       title: "Business Services",
+      menu:'drop2',
       submenu: [
         {
           title: "Services",
@@ -82,6 +86,7 @@ export const NavHeader = () => {
         },
         {
           title: "Taxation",
+          sublist:'drop1',
           submenu: [
             {
               title: "Income Tax",
@@ -91,6 +96,7 @@ export const NavHeader = () => {
         },
         {
           title: "Foreign Trade and Investments",
+          sublist:'drop2',
           submenu: [
             {
               title: "Foreign Branches In India",
@@ -104,6 +110,7 @@ export const NavHeader = () => {
         },
         {
           title: "Others",
+          sublist:'drop3',
           submenu: [
             {
               title: "Import Export Code (IEC)",
@@ -124,14 +131,17 @@ export const NavHeader = () => {
     {
       title: "Clientele",
       path: "/clientele",
+      menu:'',
     },
     {
       title: "Enquiry",
       path: "/enquiry",
+      menu:'',
     },
     {
       title: "Blog",
-      path: "/blog"
+      path: "/blog",
+      menu:'',
     },
   ];
   const [name, setname] = useState("");
@@ -150,7 +160,7 @@ export const NavHeader = () => {
         <img src={Logo} alt="Logo" style={{width:'130px'}} />
         {/* <h2>kjhwe</h2> */}
         <NavCollapse State={`${isOpen ? "none" : "flex"}`}>
-          <nav>
+          {/* <nav>
             <ul className="menus">
               {menuItems.map((menu, index) => {
                 const depthLevel = 0;
@@ -166,7 +176,8 @@ export const NavHeader = () => {
                 );
               })}
             </ul>
-          </nav>
+          </nav> */}
+          <NewMenu data={menuItems} toggle={isOpen}/>
         </NavCollapse>
         {/* </LogoPlace> */}
 
